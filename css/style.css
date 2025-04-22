@@ -1,10 +1,14 @@
 @import 'utilities.css';
 :root {
     --primary: #3DCFD3;
-    --dark: #161616;
-    --pure: #FFFFFF;
+    --dark: #0c005b;
+    --pure: #ffffff;
     --ternary: #898989;
     --light: #F2F2F2;
+}
+
+body{
+    font-family:'Special Gothic Expanded One', sans-serif
 }
 
 * {
@@ -16,7 +20,7 @@
 
 header {
     background: var(--dark);
-    height: 800px;
+    height: 200px;
 }
 
 .container {
@@ -28,4 +32,18 @@ header {
 header .left a {
     color: var(--pure);
     text-decoration: none;
+    margin-right:5rem;
+    text-transform:uppercase;
+}
+
+header nav.left a:hover{
+    color:var(--primary);
+}
+
+header nav{
+    padding:2rem 0;
+}
+
+header nav .branding{
+    margin-right:3rem;
 }
